@@ -1,0 +1,266 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Travel Portal</title>
+
+	<!--INCLUDED css FILES-->
+
+    <link href="css/jquery_ui_custom/jquery-ui-1.10.4.custom.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css">
+	<link rel="stylesheet" href="css/introjs.css">
+	
+	<!-- INCLUDED javascript FILES -->
+	<script src="js/jquery-1.10.4.js"></script>
+	<script src="js/jquery-ui-1.10.4.custom.js"></script>    
+    <script type="text/javascript" src="js/navigation.js"></script>
+    <script type="text/javascript" src="js/intro.js"></script>
+    
+</head>
+
+<body>
+	
+	<div id="tabs">
+		<ul id="navigationList">
+			<li><a href="#mainDashboardTab">Dashboard</a></li>
+			<li><a href="#mainNewRequestTab">New Request</a></li>
+			<li><a href="#mainMyRequestsTab">MyRequests</a></li>
+			<li><a href="#mainConfigTab">Configuration</a></li>
+		</ul>
+		<div id="mainDashboardTab">
+			<div style="font-weight: bold;	font-size: 1.1em; font-style:italic;">* A current Snapshot of your Travel Request Dashboard *</div>
+			<br>
+			<div style="display:inline-block;">
+            
+				<table class="dataTable" id="inProcessTable">
+					<thead>						
+						<tr class="dataTableHeaderRow">
+							<td style="width: 10%;">Order</td>
+							<td style="width: 50%;">Virtual Machine Name</td>
+							<td style="width: 25%;">Status</td>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<td colspan="3">
+								<button id="shutdownBtn" onclick="ConfirmShutdown()">Shutdown</button>
+								<button id="startupBtn" onclick="ConfirmStartup()">Startup</button>
+								<button id="refreshShutdownBtn" onclick="RefreshShutdown()">Refresh List</button>
+								<button id="shutdownHelpBtn" onclick="ShutdownHelp()">?</button>
+							</td>
+						</tr>
+					</tfoot>
+					<tbody id="virtualMachineList">
+					</tbody>
+					
+				</table>
+			</div>
+		</div>
+		<div id="mainNewRequestTab">
+			<div style="font-weight: bold;	font-size: 1.1em; font-style:italic;">* Select one or more virtual machines to backup. *</div>
+			<br>
+			<div style="display:inline-block;">
+				<table class="dataTable" id="backupTable">	
+					<thead>
+						<tr class="dataTableHeaderRow">
+							<td class="backup-vm-noprogress" id="backup1"><span>Virtual Machine Name</span></td>
+							<td class="backup-noprogress" id="backup2"><span id="backupLbl">Backup ?</span></td>
+						</tr>
+						<tr>							
+							<td></td>
+							<td><input type="checkbox" id="backupSelectAll">
+							<span id="backupSelectAllLbl"><b>Select All</b></span></td>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<td colspan="2">
+								<button id="backupBtn" onclick="ConfirmBackup()">Backup</button>
+								<button id="refreshBackupBtn" onclick="RefreshBackup()">Refresh List</button>
+								<button id="backupHelpBtn" onclick="BackupHelp()">?</button>
+							</td>							
+						</tr>
+					</tfoot>
+					<tbody id="backupList">			
+					</tbody>
+						
+				</table>
+			</div>			
+		</div>
+		<div id="mainMyRequestsTab">
+			<div style="font-weight: bold;font-size:1.1em;font-style:italic;">* Only virtual machines with available backup files are displayed. *</div>
+			<br>
+			<div style="display:inline-block;">
+				<table class="dataTable" id="restoreTable">	
+					<thead>
+						<tr class="dataTableHeaderRow">
+							<td class="restore-vm-noprogress" id="restore1"><span>Virtual Machine Name</span></td>
+							<td class="restore-status"><span>Status</span></td>
+							<td class="restore-noprogress" id="restore2"><span id="restoreLbl">Restore ?</span></td>				
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td><input type="checkbox" id="restoreSelectAll">
+							<span id="restoreSelectAllLbl"><b>Select All</b></span></td>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<td colspan="3">
+								<button id="restoreBtn" onclick="ConfirmRestore()">Restore</button>
+								<button id="refreshRestoreBtn" onclick="RefreshRestore()">Refresh List</button>
+								<button id="restoreHelpBtn" onclick="RestoreHelp()">?</button>
+							</td>
+						</tr>
+					</tfoot>
+					<tbody id="restoreList">						
+					</tbody>	
+					
+				</table>			
+			</div>				
+		</div>
+		<div id="mainConfigTab">
+			<div id="configurationTabs">
+				<ul>
+					<li><a href="#configTabs-1">Email Subscriptions</a></li>
+					<li><a href="#configTabs-2">Configure Else 2</a></li>
+					<li><a href="#configTabs-3">Configure Else 3</a></li>
+				</ul>
+				<div id="configTabs-1">
+					<table>
+						<tr>
+							<td>
+								<label for="vCenterUserInput">vCenter Username:</label>
+							</td>
+							<td>
+								<input type="text" id="vCenterUserInput"><br>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="vCenterPasswordInput">vCenter Password:</label>
+							</td>
+							<td>
+								<input type="password" id="vCenterPasswordInput">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="vCenterIPInput">vCenter IP Address:</label>
+							</td>
+							<td>
+								<input type="text" id="vCenterIPInput">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="vCenterVM">vCenter VM:</label>
+							</td>
+							<td>
+								<input type="text" id="vCenterVM">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="VRVM">Virtual Recovery VM:</label>
+							</td>
+							<td>
+								<input type="text" id="VRVM">
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<button id="submitConfigBtn" onclick="ConfirmConfig()">Submit</button>
+								<button id="resetConfigBtn" onclick="ResetConfig()">Reset</button>
+								<button id="configHelpBtn" onclick="ConfigHelp()">?</button>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div id="configTabs-2">
+				
+					<div style="display:inline-block;">
+						<div id="shutdownOrderTable">
+						
+							<div style="font-weight: bold;font-size:1.1em;font-style:italic;">
+									Drag and Drop the Virtual Machine Name [left, right, up, or down] to reorder the Shut-Down Type and/or the Shut-Down Sequence			
+							</div>
+							<br>
+							<div> 
+								<ul id="waitSortable" class="connectedSortable"></ul>							
+							</div>
+							<div id="waitSortedOrder">
+							</div>
+							<div> 
+								<ul id="nowaitSortable" class="connectedSortable"></ul>							
+							</div>
+							<div id="nowaitSortedOrder" >
+							</div>
+							<div class="sortableSpacing"><ul id="newSortable" class="connectedSortable"></ul>
+							</div>
+							<br>
+							<div class="bottomMenu">
+								<button id="shutdownOrderBtn" onclick="ConfirmShutdownOrder()">Submit</button>
+								<button id="resetShutdownBtn" onclick="ResetShutdownOrder()">Reset</button>
+								<button id="loadServersBtn" onclick="ConfirmLoadNewServers()">Load New Virtual Machines ?</button>
+								<button id="configOrderHelpBtn" onclick="ConfigureOrderHelp()">?</button>								
+							</div>							
+						</div>					
+					</div>
+										
+				</div>				
+				<div id="configTabs-3">
+				
+					<div style="display:inline-block;">
+						<div id="startupOrderTable">
+						
+							<div style="font-weight: bold;font-size:1.1em;font-style:italic;">
+									Drag and Drop the Virtual Machine Name [left, right, up, or down] to reorder the Start-Up Sequence			
+							</div>
+							<br>
+							<div> 
+								<ul id="startupSort" class="startConnectedSortable"></ul>							
+							</div>
+							<div id="startSortedOrder">
+							</div>
+							<br>
+							<div class="bottomMenu">
+								<button id="startupOrderBtn" onclick="ConfirmStartupOrder()">Submit</button>
+								<button id="resetStartupOrderBtn" onclick="GetStartupOrder()">Reset</button>								
+								<button id="configStartOrderHelpBtn" onclick="ConfigureStartOrderHelp()">?</button>								
+							</div>							
+						</div>					
+					</div>
+						
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<div id="pmDialog" Title="Power Management"></div>
+	<div id="backDialog" Title="Backup"></div>
+	<div id="restoreDialog" Title="Restore"></div>
+	<div id="configDialog" Title="Configuration"></div>
+	<div id="confirmOffDialog" Title="Confirm Shutdown?"> </div>
+	<div id="confirmStartDialog" Title="Confirm Startup?"> </div>
+	<div id="confirmBupDialog" Title="Confirm Backup?"></div>
+	<div id="confirmReDialog" Title="Confirm Restore?"></div>
+	<div id="confirmConfigDialog" Title="Confirm Update System Configuration Settings?"></div>
+	<div id="confirmOrderDialog" Title="Confirm Update Shutdown Order Settings?"></div>
+	<div id="confirmStartOrderDialog" Title="Confirm Update Start-up Order Settings?"></div>
+	<div id="confirmLoadDialog" Title="Confirm Load New Virtual Machines?"></div>
+	<div id="loadingDialog" Title="Data Loading">
+		<p>
+			<span class="custom-icon-16 working-icon" style="float: left; margin: 0 7px 50px 0;"></span>
+			Loading please wait...
+		</p>
+	</div>
+	
+	<div class="pageFooterText">
+		<p>2014 - Travel Portal Service - Version 1.0 by Booz Allen Hamilton Inc.</p>
+		
+	</div>
+</body>
+</html>

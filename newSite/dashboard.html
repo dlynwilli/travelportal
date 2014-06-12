@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>User Dashboard</title>
+
+<!--INCLUDED css FILES-->
+<link href="css/jquery_ui_custom/jquery-ui-1.10.4.custom.css" rel="stylesheet">
+
+<!-- INCLUDED javascript FILES -->
+<script src="js/jquery-1.10.4.js"></script>
+<script src="js/jquery-ui-1.10.4.custom.js"></script>
+<script src="js/portal-logic.js"></script>
+
+</head>
+
+<body>
+<div>
+  <div id="dashboard_tabs">
+    <ul>
+      <li><a href="#myRequestsTab">My Requests</a></li>
+      <li><a href="#pendingRequestsTab">Requests Pending Approval</a></li>
+      <li><a href="#completedRequestsTab">Completed Requests</a></li>
+    </ul>
+    <div id="myRequestsTab">
+      <div>      
+      <p>The following requests have not been submitted are are currently in-process by the user</p>
+      
+         <table width="200" border="1" cellspacing="1" cellpadding="1">
+  <tr>
+    <th scope="col">Delivery Order</th>
+    <th scope="col">Project</th>
+    <th scope="col">Trip Title</th>
+    <th scope="col">Estimated Cost</th>
+    <th scope="col">Edit?</th>
+  </tr>
+  <tr>
+    <td>DO06</td>
+    <td>IREMS</td>
+    <td>Biometric User Conference</td>
+    <td>$1599</td>
+    <td><button id="editButton1">edit</button></td>
+  </tr>
+  <tr>
+    <td>DO06</td>
+    <td>IREMS</td>
+    <td>EC-14 Demo</td>
+    <td>$525.33</td>
+    <td><button id="editButton2">edit</button></td>
+  </tr>
+</table>
+      
+      </div>
+      
+      
+      
+      
+    </div>
+    <div id="pendingRequestsTab">
+      <p>The followins requests are currently submitted by the user and are currently in some state of the Approval process</p>
+      
+      <div>
+      
+      <table width="200" border="1" cellspacing="1" cellpadding="1">
+  <tr>
+    <th scope="col">Delivery Order</th>
+    <th scope="col">Project</th>
+    <th scope="col">Trip Title</th>
+    <th scope="col">Estimated Cost</th>
+    <th scope="col">Current Approval Status</th>
+    <th scope="col">Next Approval State</th>
+  </tr>
+  <tr>
+    <td>DO06</td>
+    <td>IREMS</td>
+    <td>MARS Demonstration and Training</td>
+    <td>$3250</td>
+    <td>TPOC - APPROVED</td>
+    <td>COR Approval</td>
+  </tr>
+  <tr>
+    <td>DO06</td>
+    <td>IREMS</td>
+    <td>CACI - NJ Technical Exchange Meeting</td>
+    <td>$265.85</td>
+    <td>Task Lead - APPROVED</td>
+    <td>TPOC Approval</td>
+  </tr>
+</table>
+      
+      
+      </div>
+        
+          
+    </div>
+    
+    <div id="completedRequestsTab">
+      <p>The following requests have completed the approval process and provide the user a read-only history of travel requests, that he has permissions to view</p>
+      
+      <div>
+   <table width="200" border="1" cellspacing="1" cellpadding="1">
+  <tr>
+    <th scope="col">Delivery Order</th>
+    <th scope="col">Project</th>
+    <th scope="col">Trip Title</th>
+    <th scope="col">Estimated Cost</th>
+    <th scope="col">Submitted Trip Report?</th>
+  </tr>
+  <tr>
+    <td>DO06</td>
+    <td>IREMS</td>
+    <td>IREMS Training at SOSA Corp</td>
+    <td>$152.65</td>
+    <td> <div id="tripReportRadioBtns">
+      <input type="radio" name="RadioButtons1" id="Radio1">
+      <label for="Radio1">YES</label>
+      <input type="radio" name="RadioButtons1" id="Radio2">
+      <label for="Radio2">NO</label>
+      
+    </div></td>
+  </tr>
+  
+</table>
+
+
+      
+      </div>
+      
+    </div>
+    
+    
+    
+    
+  </div>
+</div>
+</body>
+</html>
