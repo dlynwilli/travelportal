@@ -45,9 +45,9 @@ if (!$projResult) {
 	exit();
 }
 
-
+/**  **/
 ?>
-<form action=<?php echo $_SERVER['PHP_SELF'] ?> method="post" name="travelRequestForm">
+<form action=<?php echo $_SERVER['PHP_SELF']?> method="post" name="travelRequestForm">
 
 	<div>
 		<div id="form_tabs">
@@ -60,23 +60,22 @@ if (!$projResult) {
 				<div>
 					<p>Enter the traveler information and select Next to continue</p>
 					<label>Traveler Name</label>
-					<div id="traveler_name">
-						<select>Select..
+					<div>
+						<select id="traveler_name">Select..
 						</select>
 					</div>
 					<label>Company Represented</label>
-					<div id="company_name">
-						<select>Select..
+					<div>
+						<select id="company_name">Select..
 						</select>
 					</div>
 					<label>Government POC for Trip</label>
-					<div id="govt_poc">
-						<select>Select..
-						</select>
+					<div>
+						<input id="govt_poc" type="text" />
 					</div>
 					<label>Contract</label>
-					<div id="contract_name">
-						<select>
+					<div>
+						<select id="contract_name">
 						<option>Select..</option>
 						<?php	
 							  while($row = mysql_fetch_row($contractResult)){
@@ -88,8 +87,8 @@ if (!$projResult) {
 						</select>
 					</div>
 					<label>Delivery Order</label>
-					<div id="delivery_order">
-						<select>
+					<div >
+						<select id="delivery_order">
 						<option>Select..</option>
 						<?php	
 							  while($row = mysql_fetch_row($dOrderResult)){
@@ -101,8 +100,8 @@ if (!$projResult) {
 						</select>
 					</div>
 					<label>Project / Task </label>
-					<div id="project_name">
-						<select>
+					<div >
+						<select id="project_name">
 						<option>Select..</option>
 						<?php	
 							  while($row = mysql_fetch_row($projResult)){
@@ -114,9 +113,9 @@ if (!$projResult) {
 						</select>
 					</div>
 				</div>
-				<div id="travelerInfoButtonMenu">
-					<button id="travelerInfoNextBtn" onclick="nextTravelerInfo()">Next</button>
-					<button id="travelerInfoSaveBtn" onclick="saveTravelerInfo()">Save</button>
+				<div id="travelerInfoButtonMenu">					
+					<button id="travelerInfoSaveBtn" onclick="SaveTravelerInfo()">Save</button>
+					<button id="travelerInfoNextBtn">Next &#187;</button>
 				</div>
 			</div>
 			<div id="tripInfoTab">
@@ -125,8 +124,8 @@ if (!$projResult) {
 					keep your work in progress.</p>
 				<div>
 					<label>Trip Title</label>
-					<div id="trip_title">
-						<input type="text" />
+					<div>
+						<input id="trip_title" type="text" />
 					</div>
 					<label>Departure Date</label>
 					<div id="depart_date">
@@ -139,55 +138,52 @@ if (!$projResult) {
 					<hr />
 					<div id="originPanel">
 						<label>Origination</label> <br /> <label>Country</label>
-						<div id="o_countryInput">
-							<select>Select..
+						<div >
+							<select id="o_countryInput">Select..
 							</select>
 						</div>
 						<label>State</label>
-						<div id="o_stateInput">
-							<select>Select..
+						<div >
+							<select id="o_stateInput">Select..
 							</select>
 						</div>
 						<label>City</label>
-						<div id="o_cityInput">
-							<select>Select..
+						<div >
+							<select id="o_cityInput">Select..
 							</select>
 						</div>
 						<label>Zip Code</label>
-						<div id="o_zipInput">
-							<select>Select..
+						<div >
+							<select id="o_zipInput">Select..
 							</select>
 						</div>
 						<label>Airport Code</label>
-						<div id="o_airportCodeInput">
-							<input type="text" />
+						<div >
+							<input id="o_airportCodeInput" type="text" />
 						</div>
 					</div>
 					<hr />
 					<div id="DestinationPanel">
 						<label>Destination</label> <br /> <label>Country</label>
-						<div id="d_countryInput">
-							<select>Select..
-							</select>
+						<div>
+							<input id="d_countryInput" type="text" />
 						</div>
 						<label>State</label>
-						<div id="d_stateInput">
-							<select>Select..
+						<div>
+							<select id="d_stateInput">Select..
 							</select>
 						</div>
 						<label>City</label>
-						<div id="d_cityInput">
-							<select>Select..
-							</select>
+						<div>
+							<input id="d_cityInput"  type="text" />
 						</div>
 						<label>Zip Code</label>
-						<div id="d_zipInput">
-							<select>Select..
-							</select>
+						<div>
+							<input id="d_zipInput" type="text" />
 						</div>
 						<label>Airport Code</label>
-						<div id="d_airportCodeInput">
-							<input type="text" />
+						<div>
+							<input id="d_airportCodeInput" type="text" />
 						</div>
 					</div>
 					<label>Justification (Trip Purpose)</label>
@@ -205,10 +201,12 @@ if (!$projResult) {
 						<input type="file" />
 					</div>
 				</div>
+				<br/>
 				<div id="tripInfoBtnPanel">
-					<button id="tripInfoPreviousBtn">Previous</button>
-					<button id="tripInfoNextBtn">Next</button>
-					<button id="tripInfoSaveBtn" >Save</button>
+					<button id="tripInfoPreviousBtn">&#171; Previous</button>
+					<button id="tripInfoSaveBtn" onclick="SaveTripInfo()" >Save</button>
+					<button id="tripInfoNextBtn">Next &#187;</button>
+					
 				</div>
 			</div>
 			<div id="costEstimateTab">
@@ -217,12 +215,12 @@ if (!$projResult) {
 					Select Save to keep your work in progress.</p>
 				<h4>Per Diem</h4>
 				<label>Max Lodging Rate</label>
-				<div id="lodgeRateInput">
-					<input type="text" />
+				<div >
+					<input id="lodgeRateInput" type="text" />
 				</div>
 				<label>Max Meals and Incenditals Rate</label>
-				<div id="meals_rate">
-					<input type="text" />
+				<div >
+					<input id="meals_rate" type="text" />
 				</div>
 				<label>Total</label>
 				<div id="perDiemTotal">
@@ -231,12 +229,12 @@ if (!$projResult) {
 				<hr />
 				<h4>Lodging</h4>
 				<label>Cost Per Day</label>
-				<div id="lodgeCost">
-					<input type="text" />
+				<div >
+					<input id="lodgeCost" type="text" />
 				</div>
 				<label>Tax Per Day</label>
-				<div id="taxCost">
-					<input type="text" />
+				<div >
+					<input id="taxCost" type="text" />
 				</div>
 				<label>Total</label>
 				<div id="lodgeTotal">
@@ -245,12 +243,12 @@ if (!$projResult) {
 				<hr />
 				<h4>Air Transportation</h4>
 				<label>Total Airfare Cost</label>
-				<div id="airfare_cost">
-					<input type="text" />
+				<div >
+					<input id="airfare_cost" type="text" />
 				</div>
 				<label>Total Airport/Airline Fees</label>
-				<div id="air_fees">
-					<input type="text" />
+				<div >
+					<input id="air_fees" type="text" />
 				</div>
 				<label>Total</label>
 				<div id="airTotal">
@@ -264,12 +262,12 @@ if (!$projResult) {
 					</h3>
 					<div>
 						<label>Rental Cost</label>
-						<div id="rentalCarCost">
-							<input type="text" />
+						<div >
+							<input id="rentalCarCost" type="text" />
 						</div>
 						<label>Fuel Cost</label>
-						<div id="fuelCost">
-							<input type="text" />
+						<div >
+							<input id="fuelCost" type="text" />
 						</div>
 						<label>Total</label>
 						<div id="rentalTotal">
@@ -281,12 +279,12 @@ if (!$projResult) {
 					</h3>
 					<div>
 						<label>Mileage One Way</label>
-						<div id="oneWay_Miles">
-							<input type="text" />
+						<div >
+							<input id="oneWay_Miles" type="text" />
 						</div>
 						<label>Mileage In and Around</label>
-						<div id="inAround_miles">
-							<input type="text" />
+						<div >
+							<input id="inAround_miles" type="text" />
 						</div>
 						<label>Total Miles</label>
 						<div id="povMilesTotal">
@@ -306,24 +304,24 @@ if (!$projResult) {
 					</h3>
 					<div>
 						<label>Other Ground Transportation Cost</label>
-						<div id="otherGroundCost">
-							<input type="text" />
+						<div >
+							<input id="otherGroundCost" type="text" />
 						</div>
 					</div>
 				</div>
 				<h4>Other Expenses</h4>
 				<div id="otherExpenses">
 					<label>Parking</label>
-					<div id="parkingExpense">
-						<input type="text" />
+					<div >
+						<input id="parkingExpense" type="text" />
 					</div>
 					<label>Tolls</label>
-					<div id="tollsExpense">
-						<input type="text" />
+					<div >
+						<input id="tollsExpense" type="text" />
 					</div>
 					<label>Other Expense</label>
-					<div id="otherExpense">
-						<input type="text" />
+					<div >
+						<input id="otherExpense" type="text" />
 					</div>
 					<hr />
 					<h4>Total Estimated Cost for Trip</h4>
@@ -331,21 +329,28 @@ if (!$projResult) {
 						<label>calculated</label>
 					</div>
 				</div>
+				<br/>
 				<div id="expenseButtonset">
-					<button id="expensePrevBtn">Previous</button>
-					<button id="expenseSaveBtn">Save</button>
-					<button id="expenseSubmitBtn">Submit</button>
+					<button id="expensePrevBtn">&#171; Previous</button>
+					<button id="expenseSaveBtn" onclick="SaveExpenseInfo()">Save</button>
+					<button id="expenseSubmitBtn" onclick="SubmitTravelRequest()">Submit</button>
 				</div>
 			</div>
 		</div>
 	</div>
 </form>
+
+
+<div id="travReqDialog" Title="Travel Request"></div>
+<div id="tripInfoDialog" Title="Trip Information"></div>
+<div id="estimateInfoDialog" Title="Trip Estimated Cost"></div>
+
 </body>
 </html>
 <script>
 function populateData(id_value)
 {
-    <?php 
+<?php 
 		
 
 
