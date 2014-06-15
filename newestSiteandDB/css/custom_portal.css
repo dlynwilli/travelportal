@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+.float_left
+{
+  float:left;	
+}
+.float_right
+{
+  float:right;	
+}
+input[type=text],input[type=password],label {
+    display: block;
+    width: 70%;
+    font-weight: bold;
+}
+
+textarea {
+    width: 99%;
+    height: 200px;
+}
+
+input[type=text],input[type=password],textarea {
+    border: 1px solid #123;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -moz-box-shadow: inset 1px 2px 4px #789;
+    -webkit-box-shadow: inset 1px 2px 4px #789;
+    box-shadow: inset 1px 2px 4px #789;
+    padding: 4px;
+    margin: 0 0 4px;
+    font-size: 16px;
+    font-family: georgia, serif;
+}
+fieldset {
+    border: 0;
+}
+
+select {
+ 	border: 1px solid #123;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -moz-box-shadow: inset 1px 2px 4px #789;
+    -webkit-box-shadow: inset 1px 2px 4px #789;
+    box-shadow: inset 1px 2px 4px #789;
+    padding: 4px;
+    margin: 0 0 4px;
+    font-size: 16px;
+}
+

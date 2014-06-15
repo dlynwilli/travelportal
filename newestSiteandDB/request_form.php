@@ -2,7 +2,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<link href="css/jquery_ui_custom/jquery-ui-1.10.4.custom.css" rel="stylesheet">
+<link href="css/jquery-ui-1.10.4.custom.css" rel="stylesheet">
+<link href="css/custom_portal.css" rel="stylesheet">
 	
 	
 
@@ -13,9 +14,9 @@
 
 //DB_SERVER, DB_USER, DB_NAME
 
-$link = mysql_connect("localhost", "sthrtrav", "B00z@ll3n") or die('Could not connect: ' . mysql_error());
+$link = mysql_connect("127.0.0.1", "admin", "adminpw") or die('Could not connect: ' . mysql_error());
 //DB_NAME
-mysql_select_db("sthrtrav_joo1") or die('Could not select database');
+mysql_select_db("mytestdb") or die('Could not select database');
 
 //query for all of the Contracts 
 $contractQuery = 'SELECT id, contract_name FROM bah_contract';
@@ -43,7 +44,6 @@ if (!$projResult) {
 
 /**  **/
 ?>
-<form action=<?php echo $_SERVER['PHP_SELF']?> method="post" name="travelRequestForm">
 
 	<div>
 		<div id="form_tabs">
@@ -53,25 +53,34 @@ if (!$projResult) {
 				<li><a href="#costEstimateTab">Trip Estimated Cost</a></li>
 			</ul>
 			<div id="travelerInfoTab">
-				<div>
+            <form action=/src/class/class.travelerInfo.php method="post" name="travelerInfoTabForm">
+            <fieldset>
+				<input type="hidden" name="request_id" value="$request->getid()" />
+            	<input type="hidden" name="token" value="$_SESSION[token]" />
+           		<input type="hidden" name="action" value="save_travelerInfo" />
+              <div>
 					<p>Enter the traveler information and select Next to continue</p>
-					<label>Traveler Name</label>
-					<div>
-						<select id="traveler_name">Select..
-						</select>
-					</div>
-					<label>Company Represented</label>
-					<div>
-						<select id="company_name">Select..
-						</select>
-					</div>
-					<label>Government POC for Trip</label>
-					<div>
-						<input id="govt_poc" type="text" />
-					</div>
-					<label>Contract</label>
-					<div>
-						<select id="contract_name">
+				  <div>
+                    <label>Traveler Name</label>
+					<select id="traveler_name" name="traveler_name">
+                   	  <option>Select..</option>
+                      <!--add method to pull other user's names from DB here-->
+                    </select>
+				  </div>
+                  <div>
+                    <label>Company Represented</label>
+                    <select id="company_name" name="company_name">
+                      <option>Select..</option>
+                          <!--add method to pull company names from DB here-->
+                    </select>
+			    </div>
+                  <div>
+			  	    <label>Government POC for Trip</label>
+				    <input id="govt_poc" name="govt_poc" type="text" />
+				  </div>
+                  <div>
+				  <label>Contract</label>
+					<select id="contract_name">
 						<option>Select..</option>
 						<?php	
 							  while($row = mysql_fetch_row($contractResult)){
@@ -80,10 +89,10 @@ if (!$projResult) {
 						            echo("<option id=\"$contract_id\" value=\"$contract_name\" onchange=\"populateData(this.id)\">$contract_name</option>\n"); 						
 						          }					
 						  ?>
-						</select>
-					</div>
+					</select>
+				</div>
+                    <div >
 					<label>Delivery Order</label>
-					<div >
 						<select id="delivery_order">
 						<option>Select..</option>
 						<?php	
@@ -95,8 +104,8 @@ if (!$projResult) {
 						  ?>
 						</select>
 					</div>
+                    <div >
 					<label>Project / Task </label>
-					<div >
 						<select id="project_name">
 						<option>Select..</option>
 						<?php	
@@ -110,11 +119,18 @@ if (!$projResult) {
 					</div>
 				</div>
 				<div id="travelerInfoButtonMenu">					
-					<button id="travelerInfoSaveBtn" onclick="SaveTravelerInfo()">Save</button>
-					<button id="travelerInfoNextBtn">Next &#187;</button>
+			  <button id="travelerInfoSaveBtn" onclick="SaveTravelerInfo()"> 
+                    Save
+                    </button>
+					<button id="travelerInfoNextBtn">
+                    Next &#187;
+              </button>
 				</div>
+                </fieldset>
+              </form>
 			</div>
 			<div id="tripInfoTab">
+            <form action=/src/class/class.tripInfo.php method="post" name="tripInfoTabForm">
 				<p>Enter the trip details and select Next to continue. Select
 					Previous to return to the traveler information tab. Select Save to
 					keep your work in progress.</p>
@@ -135,23 +151,19 @@ if (!$projResult) {
 					<div id="originPanel">
 						<label>Origination</label> <br /> <label>Country</label>
 						<div >
-							<select id="o_countryInput">Select..
-							</select>
+							<input id="o_countryInput" type="text" />
 						</div>
 						<label>State</label>
 						<div >
-							<select id="o_stateInput">Select..
-							</select>
+							<select id="o_stateInput" >Select..</select>
 						</div>
 						<label>City</label>
 						<div >
-							<select id="o_cityInput">Select..
-							</select>
+							<input id="o_cityInput" type="text" />
 						</div>
 						<label>Zip Code</label>
 						<div >
-							<select id="o_zipInput">Select..
-							</select>
+							<input id="o_zipInput" type="text" />
 						</div>
 						<label>Airport Code</label>
 						<div >
@@ -204,8 +216,10 @@ if (!$projResult) {
 					<button id="tripInfoNextBtn">Next &#187;</button>
 					
 				</div>
+              </form>  
 			</div>
 			<div id="costEstimateTab">
+            <form action=/src/class/class.costEstimate.php method="post" name="travelerInfoTabForm">
 				<p>Enter the estimated costs for the trip and select Next to
 					continue. Select Previous to return to the trip information tab.
 					Select Save to keep your work in progress.</p>
@@ -333,8 +347,9 @@ if (!$projResult) {
 				</div>
 			</div>
 		</div>
+        </form>
 	</div>
-</form>
+
 
 
 <div id="travReqDialog" Title="Travel Request"></div>
