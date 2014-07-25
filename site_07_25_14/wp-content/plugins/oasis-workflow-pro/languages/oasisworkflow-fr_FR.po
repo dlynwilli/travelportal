@@ -1,0 +1,1206 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: oasis-workflow\n"
+"POT-Creation-Date: 2014-05-03 17:38-0800\n"
+"PO-Revision-Date: 2014-05-03 17:40-0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: __;_e;_c;__ngettext;esc_html__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: C:\\workspaces\\plugins\\oasis-workflow\n"
+
+#: oasiswf-actions.php:132
+msgid "Abort workflow"
+msgstr "Annuler le workflow"
+
+#: oasiswf-actions.php:133
+msgid "Are you sure to abort the workflow?"
+msgstr "Etes-vous sûr de vouloir annuler le workflow ?"
+
+#: oasiswf-actions.php:357
+msgid "Submit to Workflow"
+msgstr "Soumettre au workflow"
+
+#: oasiswf-actions.php:358
+msgid "All steps are not defined.\\n Please check the workflow."
+msgstr ""
+"Toutes les étapes ne sont pas définies.\\n Veuillez vérifier le workflow."
+
+#: oasiswf-actions.php:359
+msgid "The selected workflow is not valid.\\n Please check this workflow."
+msgstr ""
+"Le workflow sélectionné n'est pas valide.\\n Veuillez vérifier le workflow."
+
+#: oasiswf-actions.php:360
+#: oasiswf-actions.php:381
+msgid "No users found for the given role."
+msgstr "Aucun utilisateur trouvé pour le profil donné."
+
+#: oasiswf-actions.php:361
+#: oasiswf-actions.php:386
+#, fuzzy
+msgid "You can select multiple users only for review step. Selected step is"
+msgstr ""
+"Vous ne pouvez sélectionner plusieurs utilisateurs que pour la phase de "
+"relecture.\\n L'étape actuellement sélectionnée est"
+
+#: oasiswf-actions.php:362
+#: oasiswf-actions.php:387
+msgid "step."
+msgstr "phase."
+
+#: oasiswf-actions.php:363
+msgid "Please select a workflow."
+msgstr "Veuillez sélectionner un workflow"
+
+#: oasiswf-actions.php:364
+#: oasiswf-actions.php:383
+msgid "Please select a step."
+msgstr "Veuillez sélectionner une étape."
+
+#: oasiswf-actions.php:365
+msgid "This step is not defined."
+msgstr "Cette phase n'est pas définie."
+
+#: oasiswf-actions.php:366
+#: oasiswf-actions.php:384
+msgid "Please enter a due date."
+msgstr "Veuillez choisir une date butoir."
+
+#: oasiswf-actions.php:367
+#: oasiswf-actions.php:385
+msgid "No assigned actor(s)."
+msgstr "Aucun acteur assigné."
+
+#: oasiswf-actions.php:377
+#: includes/pages/workflow-inbox.php:103
+#: includes/pages/subpages/submit-step.php:20
+#: includes/pages/subpages/submit-step.php:121
+#: includes/pages/subpages/submit-step.php:122
+#: includes/pages/subpages/submit-step.php:123
+msgid "Sign Off"
+msgstr "Se déconnecter"
+
+#: oasiswf-actions.php:378
+msgid "Go to Workflow Inbox"
+msgstr "Aller à la boîte de réception"
+
+#: oasiswf-actions.php:379
+msgid ""
+"This is the first step in the workflow.</br> Do you really want to cancel "
+"the post/page from the workflow?"
+msgstr ""
+"Il s'agit de la première étape du workflow.</br>Voulez-vous vraiment "
+"supprimer l'article/page du workflow ?"
+
+#: oasiswf-actions.php:380
+msgid ""
+"This is the last step in the workflow. Are you sure to complete the workflow?"
+msgstr ""
+"Voici la dernière étape du workflow. Etes-vous sûr de vouloir le compléter ?"
+
+#: oasiswf-actions.php:382
+msgid "Please select an action."
+msgstr "Merci de choisir une action."
+
+#: oasiswf-actions.php:396
+#: includes/workflow-duplicate-post.php:26
+#: includes/workflow-duplicate-post.php:27
+msgid "Make Revision"
+msgstr "Assurez révision"
+
+#: oasiswf-utilities.php:47
+msgid ""
+"If you find this plugin useful, please consider making a small donation to "
+"help contribute to the time invested and for further development. Thanks for "
+"your kind support!"
+msgstr ""
+"Si vous trouvez ce plugin utile, merci d'envisager une petite donation pour "
+"nous aider à continuer à le faire progresser..."
+
+#: oasiswf.php:133
+msgid "Success"
+msgstr "Validé"
+
+#: oasiswf.php:134
+msgid "Failure"
+msgstr "Rejeté"
+
+#: oasiswf.php:138
+msgid "In Progress"
+msgstr "En cours"
+
+#: oasiswf.php:139
+msgid "In Review"
+msgstr "En validation"
+
+#: oasiswf.php:140
+msgid "Ready to Publish"
+msgstr "Prêt à être publié"
+
+#: oasiswf.php:143
+msgid "Everyone should approve"
+msgstr "Tout le monde doit approuver"
+
+#: oasiswf.php:144
+#, php-format
+msgid "Atleast 50% should approve"
+msgstr ""
+
+#: oasiswf.php:145
+#, php-format
+msgid "More that 50% should approve"
+msgstr ""
+
+#: oasiswf.php:146
+msgid "Anyone should approve"
+msgstr "N'importe qui peut approuver"
+
+#: oasiswf.php:150
+#: oasiswf.php:369
+msgid "first name"
+msgstr "prénom"
+
+#: oasiswf.php:151
+#: oasiswf.php:370
+msgid "last name"
+msgstr "nom"
+
+#: oasiswf.php:152
+#: oasiswf.php:371
+msgid "post title"
+msgstr "titre de l'article"
+
+#: oasiswf.php:153
+#: oasiswf.php:372
+msgid "category"
+msgstr "catégorie"
+
+#: oasiswf.php:154
+#: oasiswf.php:373
+msgid "last modified date"
+msgstr "date de dernière modification"
+
+#: oasiswf.php:155
+#: oasiswf.php:374
+#, fuzzy
+msgid "publish date"
+msgstr "Publier"
+
+#: oasiswf.php:189
+msgid "Copy of -"
+msgstr "Copier -"
+
+#: oasiswf.php:622
+msgid "Used Revision"
+msgstr "révision d'occasion"
+
+#: oasiswf.php:630
+#, fuzzy
+msgid "Current Revision"
+msgstr "Connexion actuelle"
+
+#: oasiswf.php:654
+#: oasiswf.php:655
+msgid "Workflow Admin"
+msgstr "flux de travail d'administration"
+
+#: oasiswf.php:662
+#: oasiswf.php:663
+msgid "Edit Workflows"
+msgstr "Editer"
+
+#: oasiswf.php:669
+#: oasiswf.php:670
+msgid "New Workflow"
+msgstr "Nouveau"
+
+#: oasiswf.php:676
+#: oasiswf.php:677
+msgid "Reports"
+msgstr "compte rendu"
+
+#: oasiswf.php:683
+#: oasiswf.php:684
+msgid "Settings"
+msgstr "Paramètres"
+
+#: oasiswf.php:703
+#: oasiswf.php:704
+msgid "Workflows"
+msgstr "Flux de travail"
+
+#: oasiswf.php:710
+#: oasiswf.php:711
+#: includes/pages/workflow-inbox.php:14
+msgid "Inbox"
+msgstr "Boîte de réception"
+
+#: oasiswf.php:717
+#: oasiswf.php:718
+#: includes/pages/workflow-history.php:10
+msgid "Workflow History"
+msgstr "Historique"
+
+#: oasiswf.php:854
+msgid "Do you really want to clear all the steps?"
+msgstr "Voulez-vous vraiment effacer toutes les étapes ?"
+
+#: oasiswf.php:855
+#, fuzzy
+msgid "This step is already defined. Do you really want to remove this step?"
+msgstr "Cette étape est déjà paramétrée.\\nVoulez-vous vraiment la supprimer ?"
+
+#: oasiswf.php:856
+msgid "The path between"
+msgstr "La connexion entre"
+
+#: oasiswf.php:857
+msgid "step and"
+msgstr "étape et"
+
+#: oasiswf.php:858
+msgid "step is incorrect."
+msgstr "l'étape est incorrecte."
+
+#: oasiswf.php:869
+msgid ""
+"There is an existing workflow with the same name. Please choose another name."
+msgstr "Un workflow existe déjà sous ce nom. Veuillez choisir un autre nom."
+
+#: oasiswf.php:870
+msgid "You have unsaved changes."
+msgstr "Vous avez des modifications non enregistrées."
+
+#: oasiswf.php:885
+msgid "Due date cannot be in the past."
+msgstr "La date butoir ne peut pas être dans le passé."
+
+#: oasiswf.php:906
+msgid "Step name is required."
+msgstr "Le nom d'étape est requis."
+
+#: oasiswf.php:907
+msgid "Step name already exists. Please use a different name."
+msgstr "Ce nom d'étape existe déjà. Merci d'utiliser un nom différent."
+
+#: oasiswf.php:908
+msgid "Please select assignee(s)."
+msgstr "Sélectionner destinataire(s)."
+
+#: oasiswf.php:909
+msgid "Please select status on success."
+msgstr "Sélectionner un statut pour Validé."
+
+#: oasiswf.php:910
+msgid "Please select status on failure."
+msgstr "Sélectionner un statut pour Rejeté."
+
+#: oasiswf.php:911
+msgid "Please select a placeholder."
+msgstr "Sélectionner un espacé réservé."
+
+#: includes/workflow-base.php:306
+#, php-format
+msgid "Displaying %s-%s of %s"
+msgstr "Affichage de %s-%s sur %s"
+
+#: includes/workflow-crud.php:183
+msgid "Connection Settings"
+msgstr "Paramètres de connexion"
+
+#: includes/workflow-crud.php:187
+msgid "Current Connection"
+msgstr "Connexion actuelle"
+
+#: includes/workflow-crud.php:188
+msgid "Source"
+msgstr "origine"
+
+#: includes/workflow-crud.php:193
+msgid "Target"
+msgstr "Cible"
+
+#: includes/workflow-crud.php:201
+msgid "Path"
+msgstr "Chemin"
+
+#: includes/workflow-crud.php:216
+#: includes/workflow-crud.php:252
+#: includes/pages/auto-submit-settings.php:110
+#: includes/pages/workflow-create.php:211
+#: includes/pages/workflow-create.php:217
+#: includes/pages/workflow-settings.php:108
+#: includes/pages/wp-document-revision-settings.php:54
+#: includes/pages/subpages/reassign.php:26
+#: includes/pages/subpages/step-info-content.php:229
+msgid "Save"
+msgstr "Sauvegarder"
+
+#: includes/workflow-crud.php:219
+#: includes/workflow-crud.php:254
+#: includes/pages/subpages/action-comments.php:50
+#: includes/pages/subpages/reassign.php:28
+#: includes/pages/subpages/step-info-content.php:232
+#: includes/pages/subpages/submit-step.php:125
+#: includes/pages/subpages/submit-workflow.php:144
+msgid "Cancel"
+msgstr "Annuler"
+
+#: includes/workflow-crud.php:229
+msgid "Create New Workflow"
+msgstr "Créer un nouveau workflow"
+
+#: includes/workflow-crud.php:233
+#: includes/workflow-crud.php:267
+#: includes/pages/workflow-create.php:110
+msgid "Title : "
+msgstr "Titre :"
+
+#: includes/workflow-crud.php:243
+#: includes/workflow-crud.php:277
+#: includes/pages/workflow-create.php:121
+msgid "Description : "
+msgstr "description :"
+
+#: includes/workflow-crud.php:263
+#, fuzzy
+msgid "Copy Workflow"
+msgstr "flux de travail"
+
+#: includes/workflow-duplicate-post.php:45
+msgid "No post to copy has been supplied!"
+msgstr "Pas d'article à copier a été fourni!"
+
+#: includes/workflow-duplicate-post.php:61
+msgid "Copy failed, could not find original:"
+msgstr "Échec de la copie, ne pouvait pas trouver d'origi"
+
+#: includes/workflow-email.php:49
+msgid "You have an assignment"
+msgstr "Vous avez une nouvelle tâche"
+
+#: includes/workflow-email.php:50
+msgid "You have an assignment related to post - "
+msgstr "Vous avez une nouvelle tâche relative à l'article -"
+
+#: includes/workflow-email.php:113
+msgid "Additionally,"
+msgstr "Par ailleurs,"
+
+#: includes/workflow-email.php:113
+msgid "added the following comments"
+msgstr "a ajouté les commentaires suivants"
+
+#: includes/workflow-email.php:116
+msgid "Sign off date"
+msgstr "Date limite (fermeture)"
+
+#: includes/workflow-email.php:118
+msgid "Due date"
+msgstr "Date butoir"
+
+#: includes/workflow-email.php:191
+msgid "Your article has been published."
+msgstr "Votre article a été publié."
+
+#: includes/workflow-email.php:195
+#, php-format
+msgid ""
+"<div>Hello, <strong>%1$s</strong></div><p>Your article <a href=\"%2$s\" "
+"titile=\"%3$s\">%3$s</a> has been published on <a href=\"%4$s\" titile=\"%5$s"
+"\">%5$s</a></p><p>Thanks</p>"
+msgstr ""
+"<div>Bonjour, <strong>%1$s</strong></div><p>votre article<a href=\"%2$s\" "
+"titile=\"%3$s\">%3$s</a> a été publié sur <a href=\"%4$s\" titile=\"%5$s\">"
+"%5$s</a></p><p>Merci</p>"
+
+#: includes/workflow-history.php:40
+#: includes/workflow-history.php:258
+#: includes/workflow-list.php:34
+#: includes/workflow-submission-report.php:10
+msgid "Title"
+msgstr "Titre"
+
+#: includes/workflow-history.php:44
+#: includes/workflow-history.php:259
+msgid "Actor"
+msgstr "Acteur"
+
+#: includes/workflow-history.php:47
+msgid "Workflow(version)"
+msgstr "Flux de travail (version)"
+
+#: includes/workflow-history.php:51
+#: includes/workflow-history.php:261
+#: includes/workflow-inbox.php:12
+msgid "Step"
+msgstr "Etape"
+
+#: includes/workflow-history.php:54
+msgid "Assigned date"
+msgstr "Date fixée"
+
+#: includes/workflow-history.php:58
+msgid "Sign Off Date"
+msgstr "Date limite (fermeture)"
+
+#: includes/workflow-history.php:59
+#: includes/workflow-history.php:264
+msgid "Result"
+msgstr "Résultat"
+
+#: includes/workflow-history.php:60
+#: includes/workflow-history.php:265
+#: includes/workflow-inbox.php:15
+msgid "Comments"
+msgstr "Commentaires"
+
+#: includes/workflow-history.php:168
+#, fuzzy
+msgid "Submitted"
+msgstr "Soumettre"
+
+#: includes/workflow-history.php:169
+msgid "Aborted"
+msgstr "avorté"
+
+#: includes/workflow-history.php:170
+#, fuzzy
+msgid "Unclaimed"
+msgstr "Tâche réclamée"
+
+#: includes/workflow-history.php:171
+#, fuzzy
+msgid "Claimed"
+msgstr "Tâche réclamée"
+
+#: includes/workflow-history.php:172
+#: includes/workflow-history.php:194
+#, fuzzy
+msgid "Reassigned"
+msgstr "Réassigner"
+
+#: includes/workflow-history.php:175
+msgid "Workflow completed"
+msgstr "flux de travail terminé"
+
+#: includes/workflow-history.php:176
+#, fuzzy
+msgid "Cancelled"
+msgstr "Annuler"
+
+#: includes/workflow-history.php:185
+#: includes/workflow-history.php:205
+#: includes/pages/subpages/submit-step.php:27
+msgid "Approved"
+msgstr "Approuvé"
+
+#: includes/workflow-history.php:186
+#: includes/workflow-history.php:206
+#, fuzzy
+msgid "Rejected"
+msgstr "Rejeté"
+
+#: includes/workflow-history.php:188
+#, fuzzy
+msgid "Completed"
+msgstr "Complet"
+
+#: includes/workflow-history.php:189
+#: includes/workflow-history.php:209
+#: includes/pages/subpages/submit-step.php:28
+msgid "Unable to Complete"
+msgstr "Impossible de compléter"
+
+#: includes/workflow-history.php:208
+#: includes/pages/subpages/submit-step.php:27
+msgid "Complete"
+msgstr "Complet"
+
+#: includes/workflow-history.php:260
+#, fuzzy
+msgid "Workflow (version)"
+msgstr "Historique"
+
+#: includes/workflow-history.php:262
+#, fuzzy
+msgid "Assigned Date"
+msgstr "Date fixée"
+
+#: includes/workflow-history.php:263
+#, fuzzy
+msgid "Signoff Date"
+msgstr "Date limite (fermeture)"
+
+#: includes/workflow-history.php:286
+#: includes/workflow-history.php:315
+msgid "No comments found."
+msgstr "Aucun commentaire n'a été trouvé."
+
+#: includes/workflow-history.php:328
+#, fuzzy
+msgid "workflow-history-"
+msgstr "Historique"
+
+#: includes/workflow-history.php:342
+msgid "File not exist"
+msgstr "Fichier n'existe pas"
+
+#: includes/workflow-inbox.php:8
+#: includes/pages/workflow-assignment-report.php:50
+#: includes/pages/workflow-assignment-report.php:61
+msgid "Post/Page"
+msgstr "Article/Page"
+
+#: includes/workflow-inbox.php:9
+#: includes/workflow-submission-report.php:11
+msgid "Type"
+msgstr "type"
+
+#: includes/workflow-inbox.php:10
+#: includes/workflow-submission-report.php:12
+msgid "Author"
+msgstr "Auteur"
+
+#: includes/workflow-inbox.php:11
+#: includes/pages/workflow-assignment-report.php:51
+#: includes/pages/workflow-assignment-report.php:62
+msgid "Workflow"
+msgstr "flux de travail"
+
+#: includes/workflow-inbox.php:13
+#: includes/pages/workflow-assignment-report.php:52
+#: includes/pages/workflow-assignment-report.php:63
+msgid "Status"
+msgstr "Statut"
+
+#: includes/workflow-inbox.php:14
+#: includes/pages/workflow-assignment-report.php:53
+#: includes/pages/workflow-assignment-report.php:64
+msgid "Due Date"
+msgstr "Date butoir"
+
+#: includes/workflow-inbox.php:87
+msgid "Task claimed"
+msgstr "Tâche réclamée"
+
+#: includes/workflow-inbox.php:88
+msgid "Another user has claimed the task for the article \""
+msgstr "Un autre utilisateur a demandé à se faire attribuer l'article \""
+
+#: includes/workflow-list.php:35
+msgid "Version"
+msgstr "version"
+
+#: includes/workflow-list.php:36
+msgid "Start Date"
+msgstr "Date de début"
+
+#: includes/workflow-list.php:37
+msgid "End Date"
+msgstr "Date de fin"
+
+#: includes/workflow-list.php:38
+msgid "Post/Pages in workflow"
+msgstr "Article/Pages dans le workflow"
+
+#: includes/workflow-list.php:39
+msgid "Is Valid?"
+msgstr "Est valide ?"
+
+#: includes/workflow-list.php:40
+#, fuzzy
+msgid "Is Auto Submit?"
+msgstr "Autoriser soumission automatique ?"
+
+#: includes/workflow-submission-report.php:13
+#, fuzzy
+msgid "Date"
+msgstr "Date butoir"
+
+#: includes/pages/auto-submit-settings.php:45
+#, fuzzy
+msgid "Auto submit settings saved successfully."
+msgstr "Paramètres sauvegardés avec succès."
+
+#: includes/pages/auto-submit-settings.php:48
+#: includes/pages/workflow-settings.php:49
+#, fuzzy
+msgid "Auto submit triggered successfully. "
+msgstr "Soumission automatique complète"
+
+#: includes/pages/auto-submit-settings.php:61
+#: includes/pages/workflow-create.php:162
+msgid "Enable Auto Submit?"
+msgstr "Autoriser soumission automatique ?"
+
+#: includes/pages/auto-submit-settings.php:68
+#, fuzzy
+msgid "Post/Page status(es) to be selected for auto submit:"
+msgstr ""
+"Poster / statut de Page (s) d'être sélectionné pour présenter automatique"
+
+#: includes/pages/auto-submit-settings.php:78
+#, fuzzy
+msgid "Set Due date as CURRENT DATE + "
+msgstr "Fixer la date butoir comme date actuelle + "
+
+#: includes/pages/auto-submit-settings.php:81
+msgid "day(s)."
+msgstr "jour(s)."
+
+#: includes/pages/auto-submit-settings.php:88
+#, fuzzy
+msgid "Auto submit comments:"
+msgstr "Commentaires auto-générés"
+
+#: includes/pages/auto-submit-settings.php:98
+msgid "Process "
+msgstr "Exécuter "
+
+#: includes/pages/auto-submit-settings.php:101
+msgid "posts/pages at one time."
+msgstr "articles/pages en même temps."
+
+#: includes/pages/auto-submit-settings.php:103
+msgid ""
+"(Limit the number of posts/pages to be processed at one time for optimum "
+"server performance.)"
+msgstr ""
+"(limiter le nombre d'articles/pages à traiter en une seule fois pour "
+"optimisation des performances du serveur.)"
+
+#: includes/pages/auto-submit-settings.php:114
+#, fuzzy
+msgid "Trigger Auto Submit - Just One Time"
+msgstr "Déclencher la soumission automatique"
+
+#: includes/pages/general-settings.php:19
+#, fuzzy
+msgid "General settings saved successfully."
+msgstr "Paramètres sauvegardés avec succès."
+
+#: includes/pages/general-settings.php:21
+msgid ""
+"Either the license key is invalid or your activation limit is reached. Oasis "
+"Workflow License cannot be activated."
+msgstr ""
+"Soit la clé de licence est invalide ou votre limite d'activation est "
+"atteint. Oasis workflow Licence ne peut être activé."
+
+#: includes/pages/general-settings.php:30
+msgid "Enter your license key"
+msgstr "Entrez votre clé de licence"
+
+#: includes/pages/general-settings.php:36
+msgid "Deactivate License"
+msgstr "désactiver la licence"
+
+#: includes/pages/general-settings.php:39
+msgid "Activate License"
+msgstr "activer la licence"
+
+#: includes/pages/general-settings.php:51
+msgid "About this Plugin:"
+msgstr "A propos de ce plugin :"
+
+#: includes/pages/general-settings.php:54
+msgid "Author's website"
+msgstr "Site de l'auteur"
+
+#: includes/pages/general-settings.php:55
+msgid "Plugin webpage"
+msgstr "Page web du plugin"
+
+#: includes/pages/general-settings.php:56
+msgid "FAQ"
+msgstr "FAQ"
+
+#: includes/pages/settings.php:17
+#, fuzzy
+msgid "General Settings"
+msgstr "Paramètres"
+
+#: includes/pages/settings.php:18
+#, fuzzy
+msgid "Workflow Settings"
+msgstr "Historique"
+
+#: includes/pages/settings.php:19
+#, fuzzy
+msgid "Auto-Submit Settings"
+msgstr "Paramètres de soumission automatique"
+
+#: includes/pages/settings.php:20
+#, fuzzy
+msgid "WP Document Revision Settings"
+msgstr "Paramètres de connexion"
+
+#: includes/pages/workflow-assignment-report.php:18
+#: includes/pages/workflow-submission-report.php:32
+#, fuzzy
+msgid "Select a site: "
+msgstr "Utilisateur sélectionné : "
+
+#: includes/pages/workflow-assignment-report.php:30
+#: includes/pages/workflow-inbox.php:37
+#: includes/pages/workflow-submission-report.php:44
+msgid "Show"
+msgstr "Afficher"
+
+#: includes/pages/workflow-assignment-report.php:49
+#: includes/pages/workflow-assignment-report.php:60
+#, fuzzy
+msgid "User"
+msgstr "Utilisateur : "
+
+#: includes/pages/workflow-assignment-report.php:114
+#, fuzzy
+msgid "No current assignments."
+msgstr "Aucune affectation"
+
+#: includes/pages/workflow-create.php:43
+msgid "Processes"
+msgstr "Processus"
+
+#: includes/pages/workflow-create.php:58
+msgid ""
+"Processes are not available, since there are items (post/pages) in the "
+"workflow.&nbsp;&nbsp;&nbsp; If you want to edit the workflow,&nbsp;&nbsp; "
+"please "
+msgstr ""
+"Les processus ne sont pas disponible puisqu'il y a des éléments (articles/"
+"pages) dans le workflow.&nbsp;&nbsp;&nbsp; Si vous voulez éditer le workflow,"
+"&nbsp;&nbsp; merci de  "
+
+#: includes/pages/workflow-create.php:58
+msgid "save it as a new version"
+msgstr "Enregistrer en tant que nouvelle version"
+
+#: includes/pages/workflow-create.php:69
+msgid "Workflow Info"
+msgstr "workflow Infos"
+
+#: includes/pages/workflow-create.php:134
+msgid "Start Date :"
+msgstr "Date de début :"
+
+#: includes/pages/workflow-create.php:135
+msgid "End date :"
+msgstr "Date de fin :"
+
+#: includes/pages/workflow-create.php:142
+#: includes/pages/workflow-create.php:148
+#: includes/pages/subpages/submit-step.php:104
+#: includes/pages/subpages/submit-workflow.php:112
+#: includes/pages/subpages/submit-workflow.php:126
+msgid "clear"
+msgstr "effacer"
+
+#: includes/pages/workflow-create.php:169
+msgid "Keywords for Auto Submit : <br>&nbsp;(comma separated) "
+msgstr ""
+"Mots-clés pour soumission automatique : <br>&nbsp;(séparé par une virgule)"
+
+#: includes/pages/workflow-create.php:182
+#, fuzzy
+msgid "Workflow applicable to :"
+msgstr "flux de travail terminé"
+
+#: includes/pages/workflow-create.php:193
+msgid "new posts/pages"
+msgstr "de nouveaux articles / pages"
+
+#: includes/pages/workflow-create.php:196
+msgid "revised posts/pages"
+msgstr "révisées articles / pages"
+
+#: includes/pages/workflow-create.php:212
+#: includes/pages/workflow-create.php:218
+#: includes/pages/workflow-create.php:244
+msgid "Copy"
+msgstr "Copier"
+
+#: includes/pages/workflow-create.php:214
+msgid "Clear Workflow"
+msgstr "Effacer Workflow"
+
+#: includes/pages/workflow-create.php:216
+msgid "Save as new version"
+msgstr "Enregistrer en tant que nouvelle version"
+
+#: includes/pages/workflow-create.php:235
+#: includes/pages/workflow-create.php:242
+#: includes/pages/workflow-inbox.php:93
+#: includes/pages/workflow-list.php:60
+msgid "Edit"
+msgstr "Editer"
+
+#: includes/pages/workflow-create.php:236
+#: includes/pages/workflow-create.php:245
+#: includes/pages/workflow-list.php:62
+msgid "Delete"
+msgstr "Supprimer"
+
+#: includes/pages/workflow-create.php:237
+#: includes/pages/workflow-create.php:247
+#: includes/pages/workflow-create.php:252
+msgid "Quit"
+msgstr "Quitter"
+
+#: includes/pages/workflow-create.php:251
+msgid "Paste"
+msgstr "Coller"
+
+#: includes/pages/workflow-history.php:15
+msgid "View Post/Page Workflow History"
+msgstr "Voir l'historique du workflow"
+
+#: includes/pages/workflow-history.php:31
+msgid "Filter"
+msgstr "Filtrer"
+
+#: includes/pages/workflow-history.php:35
+#, fuzzy
+msgid "Download Workflow History Report"
+msgstr "Historique"
+
+#: includes/pages/workflow-history.php:136
+msgid "No workflow history data found."
+msgstr "Aucun historique trouvé."
+
+#: includes/pages/workflow-inbox.php:20
+msgid "View inbox of "
+msgstr "Voir boîte de réception de "
+
+#: includes/pages/workflow-inbox.php:95
+msgid "Quick Edit"
+msgstr "Edition rapide"
+
+#: includes/pages/workflow-inbox.php:100
+msgid "View"
+msgstr "Voir "
+
+#: includes/pages/workflow-inbox.php:108
+#: includes/pages/subpages/reassign.php:8
+msgid "Reassign"
+msgstr "Réassigner"
+
+#: includes/pages/workflow-inbox.php:139
+msgid "Hurray! No assignments"
+msgstr "Aucune affectation"
+
+#: includes/pages/workflow-list.php:14
+msgid "Add New"
+msgstr "Ajouter nouveau"
+
+#: includes/pages/workflow-list.php:21
+msgid "All"
+msgstr "Tous"
+
+#: includes/pages/workflow-list.php:23
+msgid "Active"
+msgstr "Actif"
+
+#: includes/pages/workflow-list.php:25
+msgid "Inactive"
+msgstr "Inactif"
+
+#: includes/pages/workflow-list.php:77
+msgid "You don't have any workflows. Let's go "
+msgstr "Vous n'avez aucun workflow. Allez"
+
+#: includes/pages/workflow-list.php:78
+msgid "create one"
+msgstr "créer un"
+
+#: includes/pages/workflow-reports.php:6
+#, fuzzy
+msgid "Current Assignments"
+msgstr "Aucune affectation"
+
+#: includes/pages/workflow-reports.php:7
+#, fuzzy
+msgid "Workflow Submissions"
+msgstr "Historique"
+
+#: includes/pages/workflow-settings.php:46
+#, fuzzy
+msgid "Workflow settings saved successfully."
+msgstr "Paramètres sauvegardés avec succès."
+
+#: includes/pages/workflow-settings.php:60
+msgid "Activate Workflow process ?"
+msgstr "Activer le processus de workflow ?"
+
+#: includes/pages/workflow-settings.php:66
+#: includes/pages/workflow-settings.php:74
+msgid " Send Reminder Email"
+msgstr " Envoyer un email de rappel "
+
+#: includes/pages/workflow-settings.php:69
+msgid "day(s) before due date."
+msgstr "jour(s) avant la date butoir"
+
+#: includes/pages/workflow-settings.php:77
+msgid "day(s) after due date."
+msgstr "jour(s) après la date butoir"
+
+#: includes/pages/workflow-settings.php:85
+msgid "Send an email notification to the author when post is published."
+msgstr "Envoyer une notification par e-mail à l'auteur quand post est publié."
+
+#: includes/pages/workflow-settings.php:91
+#, fuzzy
+msgid "Role(s) that can skip the workflow and use the out of the box options:"
+msgstr "Quel(s) rôle(s) peut forcer le workflow ?"
+
+#: includes/pages/workflow-settings.php:100
+msgid "Show Workflow options for the following post/page types:"
+msgstr ""
+"Afficher les options de flux de travail pour les types de post / page "
+"suivante:"
+
+#: includes/pages/workflow-submission-report.php:69
+#, fuzzy
+msgid "Not in Workflow"
+msgstr "Nouveau"
+
+#: includes/pages/workflow-submission-report.php:71
+#, fuzzy
+msgid "In Workflow"
+msgstr "Nouveau"
+
+#: includes/pages/workflow-submission-report.php:117
+#, fuzzy
+msgid "No Post/Pages found."
+msgstr "Article/Page"
+
+#: includes/pages/workflow-submission-report.php:129
+#, fuzzy
+msgid "-- Select Action --"
+msgstr "--Sélectionner--"
+
+#: includes/pages/workflow-submission-report.php:130
+#, fuzzy
+msgid "Abort"
+msgstr "avorté"
+
+#: includes/pages/wp-document-revision-settings.php:31
+#, fuzzy
+msgid "Document revision settings saved successfully."
+msgstr "Paramètres sauvegardés avec succès."
+
+#: includes/pages/wp-document-revision-settings.php:39
+#, fuzzy
+msgid "Title prefix:"
+msgstr "Titre :"
+
+#: includes/pages/wp-document-revision-settings.php:42
+msgid ""
+"Prefix to be added before the original title, e.g. \"Copy of\" (blank for no "
+"prefix)"
+msgstr ""
+"Préfixe à ajouter avant le titre original, par exemple, \"Copie\" (en blanc "
+"pour aucun préfixe)"
+
+#: includes/pages/wp-document-revision-settings.php:46
+#, fuzzy
+msgid "Title suffix:"
+msgstr "Titre :"
+
+#: includes/pages/wp-document-revision-settings.php:49
+msgid ""
+"Suffix to be added after the original title, e.g. \"(dup)\" (blank for no "
+"suffix)"
+msgstr ""
+"Suffixe à ajouter après le titre original, par exemple \"(dup) \" (en blanc "
+"pour aucun suffixe)"
+
+#: includes/pages/subpages/action-comments.php:27
+msgid "Comment(s)"
+msgstr "Commentaire(s)"
+
+#: includes/pages/subpages/action-comments.php:40
+msgid "User : "
+msgstr "Utilisateur : "
+
+#: includes/pages/subpages/action-comments.php:41
+msgid "Sign off date : "
+msgstr "Date de clôture : "
+
+#: includes/pages/subpages/reassign.php:11
+msgid "Select User : "
+msgstr "Utilisateur sélectionné : "
+
+#: includes/pages/subpages/step-info-content.php:14
+msgid "Step Information"
+msgstr "Info sur l'étape"
+
+#: includes/pages/subpages/step-info-content.php:17
+msgid "Step Name :"
+msgstr "Nom de l'étape : "
+
+#: includes/pages/subpages/step-info-content.php:21
+msgid "Assignee(s) :"
+msgstr "Destinataire(s) :"
+
+#: includes/pages/subpages/step-info-content.php:24
+#: includes/pages/subpages/submit-step.php:77
+#: includes/pages/subpages/submit-workflow.php:85
+msgid "Available"
+msgstr "Disponible"
+
+#: includes/pages/subpages/step-info-content.php:40
+#: includes/pages/subpages/submit-step.php:89
+#: includes/pages/subpages/submit-workflow.php:97
+msgid "Assigned"
+msgstr "Assigné"
+
+#: includes/pages/subpages/step-info-content.php:56
+msgid "Status :"
+msgstr "Statut :"
+
+#: includes/pages/subpages/step-info-content.php:59
+msgid "On Success"
+msgstr "Pour Validé"
+
+#: includes/pages/subpages/step-info-content.php:87
+msgid "On Failure"
+msgstr "Pour Rejeté"
+
+#: includes/pages/subpages/step-info-content.php:106
+msgid "Review Decision : "
+msgstr "Décision après relecture : "
+
+#: includes/pages/subpages/step-info-content.php:126
+msgid "Is first step? : "
+msgstr "Est la première étape ? : "
+
+#: includes/pages/subpages/step-info-content.php:130
+msgid "Advanced details"
+msgstr "Paramètres avancés"
+
+#: includes/pages/subpages/step-info-content.php:133
+msgid "Assignment Email"
+msgstr "Email d'assignation"
+
+#: includes/pages/subpages/step-info-content.php:135
+#: includes/pages/subpages/step-info-content.php:188
+msgid "Placeholder : "
+msgstr "Espace réservé : "
+
+#: includes/pages/subpages/step-info-content.php:143
+#: includes/pages/subpages/step-info-content.php:191
+msgid "--Select--"
+msgstr "--Sélectionner--"
+
+#: includes/pages/subpages/step-info-content.php:153
+#: includes/pages/subpages/step-info-content.php:201
+msgid "Add to subject"
+msgstr "Ajouter à l'objet"
+
+#: includes/pages/subpages/step-info-content.php:154
+#: includes/pages/subpages/step-info-content.php:202
+msgid "Add to message"
+msgstr "Ajouter au message"
+
+#: includes/pages/subpages/step-info-content.php:159
+#: includes/pages/subpages/step-info-content.php:208
+msgid "Email subject : "
+msgstr "Objet de l'email : "
+
+#: includes/pages/subpages/step-info-content.php:176
+#: includes/pages/subpages/step-info-content.php:212
+msgid "Email message : "
+msgstr "Message : "
+
+#: includes/pages/subpages/step-info-content.php:185
+msgid "Reminder Email"
+msgstr "Email de relance"
+
+#: includes/pages/subpages/submit-step.php:24
+msgid "Action : "
+msgstr "action:"
+
+#: includes/pages/subpages/submit-step.php:28
+msgid "Reject"
+msgstr "Rejeté"
+
+#: includes/pages/subpages/submit-step.php:35
+msgid "Publish"
+msgstr "Publier"
+
+#: includes/pages/subpages/submit-step.php:47
+msgid "Immediately"
+msgstr "Immédiatement"
+
+#: includes/pages/subpages/submit-step.php:56
+msgid ""
+"Signing off will copy over the contents of this revised article to the "
+"corresponding published article."
+msgstr ""
+"Signing off va copier sur le contenu de cet article révisé à l'article "
+"publié correspondant."
+
+#: includes/pages/subpages/submit-step.php:61
+#: includes/pages/subpages/submit-workflow.php:68
+msgid "Step : "
+msgstr "Etape : "
+
+#: includes/pages/subpages/submit-step.php:68
+#: includes/pages/subpages/submit-workflow.php:75
+msgid "Assign actor : "
+msgstr "Personne désignée : "
+
+#: includes/pages/subpages/submit-step.php:74
+#: includes/pages/subpages/submit-workflow.php:82
+msgid "Assign actor(s) :"
+msgstr "Personne(s) désignée(s) :"
+
+#: includes/pages/subpages/submit-step.php:100
+#: includes/pages/subpages/submit-workflow.php:108
+msgid "Due Date : "
+msgstr "Date butoir : "
+
+#: includes/pages/subpages/submit-step.php:112
+#: includes/pages/subpages/submit-workflow.php:134
+msgid "Comments : "
+msgstr "Commentaires : "
+
+#: includes/pages/subpages/submit-workflow.php:28
+#: includes/pages/subpages/submit-workflow.php:142
+msgid "Submit"
+msgstr "Soumettre"
+
+#: includes/pages/subpages/submit-workflow.php:31
+msgid "Workflow : "
+msgstr "workflow:"
+
+#: includes/pages/subpages/submit-workflow.php:122
+#, fuzzy
+msgid "Future Publish Date : "
+msgstr "Date butoir : "
+
+#~ msgid "Roles allowed to make revision of published items:"
+#~ msgstr "Rôles autorisés à faire la révision des articles publiés:"
+
+#~ msgid "Step Setting"
+#~ msgstr "Paramètre de l'étape"
+
+#~ msgid "Connector"
+#~ msgstr "Connecteur"
+
+#~ msgid "Straight"
+#~ msgstr "Direct"
+
+#~ msgid "Flowchart"
+#~ msgstr "Organigramme"
+
+#~ msgid "Post/Page status(es)"
+#~ msgstr "Statut(s) article/page"

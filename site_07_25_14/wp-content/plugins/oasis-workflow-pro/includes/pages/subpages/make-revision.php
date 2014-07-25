@@ -1,0 +1,1 @@
+<input type="hidden" id="hi_post_id"  value="<?php echo $_GET["post"] ;?>" />

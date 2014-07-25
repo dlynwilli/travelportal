@@ -1,0 +1,19 @@
+[24-Jun-2014 23:06:38] PHP Warning:  Invalid argument supplied for foreach() in /home2/sthrtrav/public_html/dev/wp-content/plugins/mojo-marketplace/inc/user-experience-tracking.php on line 276
+[24-Jun-2014 23:06:39] PHP Warning:  Invalid argument supplied for foreach() in /home2/sthrtrav/public_html/dev/wp-content/plugins/mojo-marketplace/inc/user-experience-tracking.php on line 294
+[25-Jun-2014 00:07:14] PHP Warning:  Invalid argument supplied for foreach() in /home2/sthrtrav/public_html/dev/wp-content/plugins/mojo-marketplace/inc/user-experience-tracking.php on line 294
+[25-Jun-2014 01:19:26] PHP Warning:  Invalid argument supplied for foreach() in /home2/sthrtrav/public_html/dev/wp-content/plugins/mojo-marketplace/inc/user-experience-tracking.php on line 294
+[25-Jun-2014 02:06:40] PHP Warning:  Invalid argument supplied for foreach() in /home2/sthrtrav/public_html/dev/wp-content/plugins/mojo-marketplace/inc/user-experience-tracking.php on line 294
+[28-Jun-2014 17:00:25] PHP Parse error:  syntax error, unexpected T_STRING in /home2/sthrtrav/public_html/dev/wp-content/themes/twentyfourteen/functions.php on line 26
+[28-Jun-2014 17:00:53] PHP Parse error:  syntax error, unexpected T_STRING in /home2/sthrtrav/public_html/dev/wp-content/themes/twentyfourteen/functions.php on line 26
+[28-Jun-2014 17:01:10] PHP Parse error:  syntax error, unexpected T_STRING in /home2/sthrtrav/public_html/dev/wp-content/themes/twentyfourteen/functions.php on line 26
+[28-Jun-2014 17:01:42] PHP Parse error:  syntax error, unexpected T_STRING in /home2/sthrtrav/public_html/dev/wp-content/themes/twentyfourteen/functions.php on line 26
+[29-Jun-2014 05:26:52] PHP Parse error:  syntax error, unexpected T_STRING in /home2/sthrtrav/public_html/dev/wp-content/themes/twentyfourteen/functions.php on line 542
+[29-Jun-2014 05:28:37] PHP Parse error:  syntax error, unexpected T_STRING in /home2/sthrtrav/public_html/dev/wp-content/themes/twentyfourteen/functions.php on line 542
+[29-Jun-2014 05:28:39] PHP Parse error:  syntax error, unexpected T_STRING in /home2/sthrtrav/public_html/dev/wp-content/themes/twentyfourteen/functions.php on line 542
+[29-Jun-2014 05:28:41] PHP Parse error:  syntax error, unexpected T_STRING in /home2/sthrtrav/public_html/dev/wp-content/themes/twentyfourteen/functions.php on line 542
+[29-Jun-2014 05:29:31] PHP Parse error:  syntax error, unexpected T_STRING in /home2/sthrtrav/public_html/dev/wp-content/themes/twentyfourteen/functions.php on line 542
+[16-Jul-2014 01:42:45] PHP Parse error:  syntax error, unexpected T_IF in /home2/sthrtrav/public_html/dev/wp-content/themes/twentyfourteen/functions.php on line 1
+[16-Jul-2014 01:43:54] PHP Parse error:  syntax error, unexpected T_IF in /home2/sthrtrav/public_html/dev/wp-content/themes/twentyfourteen/functions.php on line 1
+[16-Jul-2014 01:43:56] PHP Parse error:  syntax error, unexpected T_IF in /home2/sthrtrav/public_html/dev/wp-content/themes/twentyfourteen/functions.php on line 1
+[16-Jul-2014 01:44:01] PHP Parse error:  syntax error, unexpected T_IF in /home2/sthrtrav/public_html/dev/wp-content/themes/twentyfourteen/functions.php on line 1
+[16-Jul-2014 01:48:12] PHP Parse error:  syntax error, unexpected T_STRING, expecting ']' in /home2/sthrtrav/public_html/dev/wp-content/themes/twentyfourteen/functions.php on line 566
